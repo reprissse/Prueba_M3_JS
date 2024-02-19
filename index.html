@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero</title>
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="autor" content="Raquel Jiménez Ramírez">
+    <meta name="description" content="caracteristicas de super heroes">
+    <meta name="keywords" content="super heroes, caracteristicas, poderes, metricas">
+    <!-- Mi Estilo -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                SuperHero
+              </a>
+            </div>
+        </nav>
+
+        <!-- cabecera -->
+        <div class="d-flex justify-content-center align-items-center p-sm-2" style="height: 500px;">
+            <img src="./assets/img/sh1.jpg" class="img-fluid" alt="imagenSuperHeore">
+        </div>
+    </header>
+
+    <!--  Bienvenida-->
+    <section class="hero">
+        <div class="container">
+            <h1>Encuentra tu SuperHero</h1>
+        </div>
+    </section>
+
+
+    <div class="m-3">
+        <!-- formulario -->
+        <form id="formHeroe" class="p-3">
+            <div class="mb-3 ">
+                <label for="numeroHeroe" class="form-label">Ingresa un número para descubrir las características y poderes de tus superhéroes favoritos</label>
+                <input class="form-control" id="numeroHeroe" aria-describedby="instrucciones">
+                <div id="instrucciones" class="form-text">Utiliza formato numerico (1-732)</div>
+            </div>
+            <button type="submit" class="btn btn-dark">Aceptar</button>
+        </form>
+    
+
+        <section class="p-3">
+        <!-- resultado y gráfico -->
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- resultado -->
+                <div id="cardHeroe" class="card mb-3 m-3 p-3" style="max-width: 540px; display: none;"></div>
+            </div>
+            <div class="col-lg-6">
+                <!-- gráfico -->
+                <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <!-- CDN JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- script canvas JS -->
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <!-- mi script -->
+    <script src="./assets/js/script.js"></script>
+    <!-- script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
